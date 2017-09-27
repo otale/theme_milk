@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="zh-CN">
+#include("./partial/head.html")
+<body class="theme-body">
+#include("./partial/header.html")
+<div class="flex-center">
+    <div class="container">
+        ${bodyContent}
+        #include("./partial/footer.html")
+    </div>
+    #include("./partial/sidebar.html")
+</div>
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="${theme_url('/static/js/main.js')}"></script>
+#include("./partial/google_analytics.html")
+#include("./partial/disqus_count.html")
+</body>
+</html>

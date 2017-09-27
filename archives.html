@@ -1,0 +1,10 @@
+#tag layout_block("bodyContent")
+<h1 class="text-center">归档</h1>
+#for(archive : archives)
+<h3>${archive.date_str}</h3>
+#include('./partial/posts_title.html', {articles : archive.articles})
+#end
+
+#end
+
+#include ("./layout.html")

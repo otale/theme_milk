@@ -1,0 +1,101 @@
+#tag layout_block("bodyContent")
+<div class="col-sm-12">
+    <h4 class="page-title">主题设置</h4>
+</div>
+<form id="theme-options-form" class="form-horizontal" role="form">
+    <div class="col-md-6">
+        <div class="panel panel-color panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">基本设置</h3>
+            </div>
+            <div class="panel-body">
+                <div class="form-group">
+                    <label class="col-md-3 control-label">主题作者</label>
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" name="author"
+                               value="${theme_options.author ?! '王爵nice'}" placeholder="您的博客昵称">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 control-label">个人介绍</label>
+                    <div class="col-md-9">
+                        <textarea class="form-control" name="intro" placeholder="请写一段自己的个人介绍吧">${theme_options.intro ?! ''}</textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-3 control-label">Disqus评论设置</label>
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" name="disqus_shortname"
+                               value="${theme_options.disqus_shortname ?! ''}" placeholder="您的Disqus Name">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-3 control-label">谷歌分析代码</label>
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" name="author"
+                               value="${theme_options.google_analytics ?! ''}" placeholder="请输入您的分析代码，如：UA-53476480-1">
+                    </div>
+                </div>
+
+                <div class="clearfix pull-right">
+                    <button type="button" class="btn btn-primary waves-effect waves-light"
+                            onclick="saveThemeOptions('theme-options-form')">
+                        保存设置
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="col-md-6">
+        <div class="panel panel-color panel-inverse">
+            <div class="panel-heading">
+                <h3 class="panel-title">社交账号</h3>
+            </div>
+            <div class="panel-body">
+                <div class="form-group">
+                    <label class="col-md-3 control-label">Github账号</label>
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" name="social_github"
+                               value="${theme_options.social_github ?! ''}" placeholder="Github账号，不输入则不显示">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-3 control-label">V2ex 账号</label>
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" name="social_v2ex"
+                               value="${theme_options.social_v2ex ?! ''}" placeholder="V2ex账号，不输入则不显示">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-3 control-label">知乎账号</label>
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" name="social_zhihu"
+                               value="${theme_options.social_zhihu ?! ''}"
+                               placeholder="知乎账号，不输入则不显示">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-3 control-label">Twitter账号</label>
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" name="social_twitter"
+                               value="${theme_options.social_twitter ?! ''}" placeholder="Twitter账号，不输入则不显示">
+                    </div>
+                </div>
+                <div class="clearfix pull-right">
+                    <button type="button" class="btn btn-inverse waves-effect waves-light"
+                            onclick="saveThemeOptions('theme-options-form')">
+                        保存设置
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+#end
+#include ("/comm/ts_base_layout.html")

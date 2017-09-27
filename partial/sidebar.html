@@ -1,0 +1,67 @@
+<div class="theme-sidebar-mask theme-hide"></div>
+<aside class="theme-sidebar-wrapper">
+    <div class="container flex-left units-gap theme-header-container">
+        #include("./icons.html")
+    </div>
+    <div class="container">
+        <h2>${site_title()}</h2>
+        <p class="top-gap-0 text-muted">${site_description()}</p>
+        <div class="flex-left flex-middle top-gap">
+            <img alt="Avatar" height="25" width="25" src="${theme_url('/static/img/avatar.jpg')}"/>
+            <span class="theme-sidebar-author">${theme_option('author')}</span>
+        </div>
+
+        <p>${theme_option('intro')}</p>
+
+        <p class="theme-sidebar-social">
+
+            #if(not_empty(theme_option('social_github')))
+            <a class="unit-0 theme-icon-link" href="https://github.com/${theme_option('social_github')}" title="GitHub">
+                <i class="czs-github"></i>
+            </a>
+            #end
+
+            #if(not_empty(theme_option('social_v2ex')))
+            <a class="unit-0 theme-icon-link" href="https://www.v2ex.com/member/${theme_option('social_v2ex')}"
+               title="V2EX">
+                <i class="czs-v2ex"></i>
+            </a>
+            #end
+
+            #if(not_empty(theme_option('social_zhihu')))
+            <a class="unit-0 theme-icon-link" href="https://www.zhihu.com/people/${theme_option('social_zhihu')}"
+               title="ZhiHu">
+                <i class="czs-comment"></i>
+            </a>
+            #end
+
+            #if(not_empty(theme_option('social_twitter')))
+            <a class="unit-0 theme-icon-link" href="https://twitter.com/${theme_option('social_twitter')}"
+               title="Twitter">
+                <i class="czs-twitter"></i>
+            </a>
+            #end
+
+            #if(not_empty(theme_option('social_email')))
+            <a class="unit-0 theme-icon-link" href="mailto:${theme_option('social_email')}" title="Email">
+                <i class="czs-talk"></i>
+            </a>
+            #end
+
+            <a class="unit-0 theme-icon-link" href="${site_url('/atom.xml')}" title="RSS 订阅">
+                <i class="czs-rss"></i>
+            </a>
+        </p>
+
+        <h5>友情链接</h5>
+        <p class="text-muted">
+            <small>
+                <ul class="theme-list-style-none">
+                    <li><a class="text-muted" href="https://lets-blade.com/">Lets Blade</a></li>
+                    <li><a class="text-muted" href="https://github.com/otale/tale">Tale 博客</a></li>
+                    <li><a class="text-muted" href="${site_url('/links')}">More</a></li>
+                </ul>
+            </small>
+        </p>
+    </div>
+</aside>

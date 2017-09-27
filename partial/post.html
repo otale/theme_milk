@@ -1,0 +1,21 @@
+<article>
+    <h1 class="text-center">
+        ${title()}
+    </h1>
+    <div class="text-center top-gap">
+        #include("./post_meta.html", {article: article})
+    </div>
+    <div class="top-gap-big">
+        ${show_content()}
+    </div>
+</article>
+#if(tag_list().size() > 0)
+<div class="top-gap-big text-center text-muted">
+    <small>
+        <i class="czs-tag-l"></i>
+        #for(tag : tag_list())
+        <a class="text-muted" href="${site_url('/tag/' + tag)}">${tag}</a>
+        #end
+    </small>
+</div>
+#end

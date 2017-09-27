@@ -1,0 +1,7 @@
+#tag layout_block("bodyContent")
+<h1 class="text-center">${keyword}</h1>
+#include('./partial/posts_title.html', {articles : articles.rows})
+#include('./partial/pagination.html', {pageInfo: articles})
+#end
+
+#include ("./layout.html")

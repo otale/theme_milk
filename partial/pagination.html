@@ -1,0 +1,23 @@
+#if(pageInfo.hasPrevPage || pageInfo.hasNextPage)
+<nav class="theme-pagination top-gap-big text-center">
+    #if(pageInfo.hasPrevPage)
+    <a class="extend prev" rel="prev" href="${site_url(page_prefix + '/' + pageInfo.prevPage)}">
+        <i class="czs-angle-left-l"></i>
+    </a>
+    #end
+
+    #for(navIndex : pageInfo.navPageNums)
+        #if(pageInfo.pageNum== navIndex)
+        <span class="page-number current">${navIndex}</span>
+        #else
+        <a class="page-number" href="${site_url(page_prefix + '/' + navIndex)}">${navIndex}</a>
+        #end
+    #end
+
+    #if(pageInfo.hasNextPage)
+    <a class="extend next" rel="next" href="${site_url(page_prefix + '/' + pageInfo.nextPage)}">
+        <i class="czs-angle-right-l"></i>
+    </a>
+    #end
+</nav>
+#end

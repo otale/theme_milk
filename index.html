@@ -1,0 +1,6 @@
+#tag layout_block("bodyContent")
+    #include('./partial/posts_excerpt.html')
+    #include('./partial/pagination.html', {pageInfo: articles(5)})
+#end
+
+#include ("./layout.html")

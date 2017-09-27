@@ -1,0 +1,16 @@
+<ul class="top-gap-big theme-ul-no-style">
+    #for(article : articles(5).rows)
+    <li>
+        <a href="${permalink()}" class="theme-header-link">
+            <h3>${title()}</h3>
+        </a>
+        #include("./post_meta.html", {articles: articles})
+
+        <p class="post-item_headline">${intro(75)} ...</p>
+        <p>
+            <a class="text-muted" href="${permalink()}">阅读全文</a>
+        </p>
+        <div class="top-gap theme-bfc"></div>
+    </li>
+    #end
+</ul>

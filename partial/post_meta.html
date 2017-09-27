@@ -1,0 +1,18 @@
+<div class="text-small text-muted">
+    <time datetime="${created('yyyy-MM-dd')}">
+        ${created('yyyy-MM-dd')}
+    </time>
+    <span class="theme-separator">·</span>
+    <i class="czs-user-l"></i>
+    <a class="text-muted theme-text-no-decoration" href="https://github.com/biezhi">biezhi</a>
+    <span class="theme-separator">·</span>
+    <i class="czs-bookmark-l"></i>
+    #for(category : category_list())
+    <a class="text-muted theme-text-no-decoration" href="/category/${category}">${category}</a>
+    #end
+    <span class="theme-comment-count-container theme-hide theme-comment-count-container-transparent">
+    <span class="theme-separator">·</span>
+    <i class="czs-comment-l"></i>
+    <a class="text-muted theme-text-no-decoration theme-comment-count" data-disqus-identifier="${permalink()}" href="${permalink()}#disqus_thread"></a>
+  </span>
+</div>
