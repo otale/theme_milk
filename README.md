@@ -10,13 +10,15 @@
 
 ## 预览
 
-![](http://7xls9k.dl1.z0.glb.clouddn.com/milk.png)
+<img src="http://7xls9k.dl1.z0.glb.clouddn.com/milk.png" width="768" />
 
-![](http://7xls9k.dl1.z0.glb.clouddn.com/milk2.png)
+<img src="http://7xls9k.dl1.z0.glb.clouddn.com/milk2.png" width="768" />
 
-![](http://7xls9k.dl1.z0.glb.clouddn.com/milk3.png)
+<img src="http://7xls9k.dl1.z0.glb.clouddn.com/milk3.png" width="768" />
 
-![](http://7xls9k.dl1.z0.glb.clouddn.com/milk4.png)
+<img src="http://7xls9k.dl1.z0.glb.clouddn.com/milk4.png" width="768" />
 
-![](http://7xls9k.dl1.z0.glb.clouddn.com/milk5.png)
+**后台设置**
+
+<img src="http://7xls9k.dl1.z0.glb.clouddn.com/milk5.png" width="768" />
 
