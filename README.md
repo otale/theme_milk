@@ -1,6 +1,6 @@
 # milk
 
-本主题修改自 [milk](https://github.com/xcatliu/blog)
+本主题修改自 [milk](https://github.com/xcatliu/blog)，支持最新版 `tale` 引擎。
 
 ## 使用
 
